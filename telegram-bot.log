@@ -1,0 +1,1834 @@
+[INFO] 17-11-23 - 16:13:28 : Bot starts | main.py
+[INFO] 17-11-23 - 16:14:07 : Bot starts | main.py
+[INFO] 17-11-23 - 16:15:54 : Bot starts | main.py
+[INFO] 17-11-23 - 16:18:34 : Bot starts | main.py
+[INFO] 17-11-23 - 16:20:12 : Bot starts | main.py
+[INFO] 17-11-23 - 16:20:40 : Bot starts | main.py
+[INFO] 17-11-23 - 16:20:58 : Bot starts | main.py
+[INFO] 17-11-23 - 16:24:51 : Bot starts | main.py
+[INFO] 17-11-23 - 16:29:51 : Bot starts | main.py
+[INFO] 17-11-23 - 16:32:55 : Bot starts | main.py
+[INFO] 17-11-23 - 16:32:55 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 16:32:59 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 16:33:25 : Update id=355590238 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 16:37:15 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 16:37:15 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 16:37:17 : Bot starts | main.py
+[INFO] 17-11-23 - 16:37:17 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 16:37:18 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 16:37:24 : Update id=355590239 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 17:37:06 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:37:06 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 17:37:07 : Bot starts | main.py
+[INFO] 17-11-23 - 17:37:07 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 17:37:08 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:37:14 : Update id=355590240 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 17:41:31 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:41:31 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 17:41:33 : Bot starts | main.py
+[INFO] 17-11-23 - 17:41:33 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 17:41:34 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:41:39 : Update id=355590241 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 17-11-23 - 17:41:39 : Cause exception while process update id=355590241 by bot id=6365986384
+TypeError: start_keyboard() takes 0 positional arguments but 1 was given | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 47, in call
+    return await loop.run_in_executor(None, wrapped)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+TypeError: start_keyboard() takes 0 positional arguments but 1 was given
+[INFO] 17-11-23 - 17:41:58 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:41:58 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 17:42:00 : Bot starts | main.py
+[INFO] 17-11-23 - 17:42:00 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 17:42:01 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 17:42:04 : Update id=355590242 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 17-11-23 - 17:45:09 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 17-11-23 - 17:45:09 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 17-11-23 - 17:45:21 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[ERROR] 17-11-23 - 18:41:32 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 17-11-23 - 18:41:32 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 17-11-23 - 18:41:44 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[INFO] 17-11-23 - 19:05:38 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 19:05:38 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 19:09:00 : Bot starts | main.py
+[INFO] 17-11-23 - 19:09:00 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 19:09:02 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 19:14:26 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 19:14:26 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 19:22:50 : Bot starts | main.py
+[INFO] 17-11-23 - 19:22:50 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 19:22:51 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 19:41:13 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 19:41:13 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 19:42:45 : Bot starts | main.py
+[INFO] 17-11-23 - 19:42:45 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 19:42:45 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 21:42:39 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 21:42:39 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 22:15:40 : Bot starts | main.py
+[INFO] 17-11-23 - 22:15:40 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 22:15:41 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 22:15:51 : Update id=355590243 is handled. Duration 969 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 22:16:00 : Update id=355590244 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 22:16:22 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 22:16:22 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 22:16:24 : Bot starts | main.py
+[INFO] 17-11-23 - 22:16:24 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 22:16:25 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 22:16:29 : Update id=355590245 is handled. Duration 421 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 22:16:31 : Update id=355590246 is handled. Duration 140 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 22:59:46 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 22:59:46 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:04:54 : Bot starts | main.py
+[INFO] 17-11-23 - 23:04:54 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:04:55 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:05:10 : Update id=355590247 is handled. Duration 844 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:05:12 : Update id=355590248 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:05:23 : Update id=355590249 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:05:47 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:05:47 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:06:54 : Bot starts | main.py
+[INFO] 17-11-23 - 23:06:54 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:06:55 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:07:04 : Update id=355590250 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:07:13 : Update id=355590251 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:07:23 : Update id=355590252 is not handled. Duration 14 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:07:57 : Update id=355590253 is handled. Duration 844 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:08:04 : Update id=355590254 is handled. Duration 14 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:29:25 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:29:25 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:29:27 : Bot starts | main.py
+[INFO] 17-11-23 - 23:29:27 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:29:28 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:29:49 : Update id=355590255 is handled. Duration 1312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:31:25 : Update id=355590256 is handled. Duration 891 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:31:39 : Update id=355590257 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:31:45 : Update id=355590258 is handled. Duration 389 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:31:47 : Update id=355590259 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:36:14 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:36:14 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:36:16 : Bot starts | main.py
+[INFO] 17-11-23 - 23:36:16 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:36:17 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:36:25 : Update id=355590260 is handled. Duration 265 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:36:28 : Update id=355590261 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:37:50 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:37:50 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:37:52 : Bot starts | main.py
+[INFO] 17-11-23 - 23:37:52 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:37:53 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:38:00 : Update id=355590262 is handled. Duration 405 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:38:02 : Update id=355590263 is handled. Duration 235 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:38:08 : Update id=355590264 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:38:12 : Update id=355590265 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:38:24 : Update id=355590266 is handled. Duration 264 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:38:28 : Update id=355590267 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 17-11-23 - 23:58:09 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:58:09 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:58:10 : Bot starts | main.py
+[INFO] 17-11-23 - 23:58:10 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:58:11 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:58:22 : Update id=355590268 is not handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 17-11-23 - 23:58:22 : Cause exception while process update id=355590268 by bot id=6365986384
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "models.master" at byte offset 0 | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 71, in add_master
+    await message.answer(master.__str__())
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "models.master" at byte offset 0
+[INFO] 17-11-23 - 23:58:47 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:58:47 : Polling stopped | dispatcher.py
+[INFO] 17-11-23 - 23:58:49 : Bot starts | main.py
+[INFO] 17-11-23 - 23:58:49 : Start polling | dispatcher.py
+[INFO] 17-11-23 - 23:58:50 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 17-11-23 - 23:58:52 : Update id=355590269 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 17-11-23 - 23:58:52 : Cause exception while process update id=355590269 by bot id=6365986384
+ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value=<models.Master object at 0x0000018F43FB4610>, input_type=Master]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 71, in add_master
+    await message.answer(master)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\types\message.py", line 1725, in answer
+    return SendMessage(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pydantic\main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value=<models.Master object at 0x0000018F43FB4610>, input_type=Master]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+[INFO] 18-11-23 - 00:00:44 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:00:44 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:00:46 : Bot starts | main.py
+[INFO] 18-11-23 - 00:00:46 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:00:47 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:00:50 : Update id=355590270 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 00:00:50 : Cause exception while process update id=355590270 by bot id=6365986384
+TypeError: unsupported operand type(s) for +: 'int' and 'str' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 72, in add_master
+    masters_list += master.id + " " + master.name
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+[INFO] 18-11-23 - 00:01:06 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:01:06 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:01:08 : Bot starts | main.py
+[INFO] 18-11-23 - 00:01:08 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:01:09 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:01:14 : Update id=355590271 is handled. Duration 15 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:01:38 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:01:38 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:01:44 : Bot starts | main.py
+[INFO] 18-11-23 - 00:01:44 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:01:45 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:02:39 : Update id=355590272 is not handled. Duration 30875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:02:39 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:02:39 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:02:54 : Bot starts | main.py
+[INFO] 18-11-23 - 00:02:54 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:02:55 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:02:59 : Update id=355590273 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:03:13 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:03:13 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:03:15 : Bot starts | main.py
+[INFO] 18-11-23 - 00:03:15 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:03:16 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:03:19 : Update id=355590274 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:03:44 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:03:44 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:03:46 : Bot starts | main.py
+[INFO] 18-11-23 - 00:03:46 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:03:46 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:03:49 : Update id=355590275 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:24:16 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:24:16 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:24:18 : Bot starts | main.py
+[INFO] 18-11-23 - 00:24:18 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:24:18 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:24:25 : Update id=355590276 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:25:18 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:25:18 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:25:20 : Bot starts | main.py
+[INFO] 18-11-23 - 00:25:20 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 00:25:21 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 00:25:26 : Update id=355590277 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:25:31 : Update id=355590278 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:25:44 : Update id=355590279 is handled. Duration 109 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:25:51 : Update id=355590280 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:26:00 : Update id=355590281 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:26:01 : Update id=355590282 is handled. Duration 110 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:26:03 : Update id=355590283 is handled. Duration 110 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:26:07 : Update id=355590284 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 00:32:56 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 00:32:56 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 18:41:37 : Bot starts | main.py
+[INFO] 18-11-23 - 18:41:37 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 18:41:37 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 18:41:53 : Update id=355590285 is handled. Duration 890 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:42:04 : Update id=355590286 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:42:07 : Update id=355590287 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:42:18 : Update id=355590288 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:43:10 : Update id=355590289 is handled. Duration 859 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:43:17 : Update id=355590290 is handled. Duration 390 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 18:43:39 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 18:43:39 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:53:40 : Bot starts | main.py
+[INFO] 18-11-23 - 19:53:40 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 19:53:41 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:53:58 : Update id=355590291 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 19:53:58 : Cause exception while process update id=355590291 by bot id=6365986384
+AttributeError: type object 'States' has no attribute 'add_ticket' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\operator_interface.py", line 25, in add_ticket
+    await state.set_state(States.add_ticket)
+AttributeError: type object 'States' has no attribute 'add_ticket'
+[INFO] 18-11-23 - 19:54:28 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 19:54:28 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:54:30 : Bot starts | main.py
+[INFO] 18-11-23 - 19:54:30 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 19:54:31 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:54:37 : Update id=355590292 is handled. Duration 2670 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:55:38 : Update id=355590293 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:55:44 : Update id=355590294 is handled. Duration 295 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:55:58 : Update id=355590295 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:56:09 : Update id=355590296 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:56:14 : Update id=355590297 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:56:20 : Update id=355590298 is handled. Duration 922 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:56:27 : Update id=355590299 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:56:38 : Update id=355590300 is handled. Duration 358 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:57:25 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 19:57:25 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:57:27 : Bot starts | main.py
+[INFO] 18-11-23 - 19:57:27 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 19:57:27 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 19:57:34 : Update id=355590301 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:57:47 : Update id=355590302 is handled. Duration 937 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:57:58 : Update id=355590303 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:03 : Update id=355590304 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:21 : Update id=355590305 is handled. Duration 1688 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:37 : Update id=355590306 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:40 : Update id=355590307 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:49 : Update id=355590308 is handled. Duration 453 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:58:53 : Update id=355590309 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:59:01 : Update id=355590310 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 19:59:06 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 18-11-23 - 19:59:06 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 18-11-23 - 19:59:07 : Update id=355590311 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:59:18 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[INFO] 18-11-23 - 19:59:21 : Update id=355590312 is handled. Duration 1735 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 19:59:23 : Update id=355590313 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 20:00:45 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 18-11-23 - 20:00:45 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 18-11-23 - 20:00:58 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[INFO] 18-11-23 - 20:13:01 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 20:13:01 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:13:03 : Bot starts | main.py
+[INFO] 18-11-23 - 20:13:03 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 20:13:05 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:13:12 : Update id=355590314 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:13:25 : Update id=355590315 is handled. Duration 515 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:13:43 : Update id=355590316 is handled. Duration 891 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:13:55 : Update id=355590317 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:14:04 : Update id=355590318 is handled. Duration 405 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:14:07 : Update id=355590319 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:14:16 : Update id=355590320 is handled. Duration 358 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:14:34 : Update id=355590321 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:14:44 : Update id=355590322 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 20:14:44 : Cause exception while process update id=355590322 by bot id=6365986384
+OperationalError: (sqlite3.OperationalError) table Ticket has no column named address
+[SQL: INSERT INTO "Ticket" (problem, price, address, phone, client_name, time, description, is_done, master_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Нехватка пива в организме', '3 бутылка темного козла', 'воровского 79 кв 90 домофон-', '+79823351578', 'Никита', '21:00', 'Приходить с сухариками', 0, None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table Ticket has no column named address
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\operator_interface.py", line 124, in cancel_handler
+    db.commit()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table Ticket has no column named address
+[SQL: INSERT INTO "Ticket" (problem, price, address, phone, client_name, time, description, is_done, master_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Нехватка пива в организме', '3 бутылка темного козла', 'воровского 79 кв 90 домофон-', '+79823351578', 'Никита', '21:00', 'Приходить с сухариками', 0, None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] 18-11-23 - 20:16:38 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 20:16:38 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:16:58 : Bot starts | main.py
+[INFO] 18-11-23 - 20:16:58 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 20:17:00 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:17:07 : Update id=355590323 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:12 : Update id=355590324 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:20 : Update id=355590325 is handled. Duration 155 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:32 : Update id=355590326 is handled. Duration 187 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:38 : Update id=355590327 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:43 : Update id=355590328 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:48 : Update id=355590329 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:54 : Update id=355590330 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:17:59 : Update id=355590331 is not handled. Duration 15 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 20:17:59 : Cause exception while process update id=355590331 by bot id=6365986384
+DetachedInstanceError: Instance <Ticket at 0x15b9dfd0e50> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3) | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\operator_interface.py", line 126, in cancel_handler
+    text = ("Заявка:" + "\n" + "#" + str(ticket.id) + "\n" + data["client_problem"] + "\n" + data["price"] + "\n" +
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state.py", line 798, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\loading.py", line 1582, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Ticket at 0x15b9dfd0e50> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+[INFO] 18-11-23 - 20:24:41 : Update id=355590332 is handled. Duration 906 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:24:56 : Update id=355590333 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:00 : Update id=355590334 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:13 : Update id=355590335 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:24 : Update id=355590336 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:32 : Update id=355590337 is handled. Duration 390 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:36 : Update id=355590338 is handled. Duration 405 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:47 : Update id=355590339 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:25:51 : Update id=355590340 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 18-11-23 - 20:25:51 : Cause exception while process update id=355590340 by bot id=6365986384
+DetachedInstanceError: Instance <Ticket at 0x15b9ff16250> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3) | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\operator_interface.py", line 126, in cancel_handler
+    #text = ("Заявка:" + "\n" + "#" + str(ticket.id) + "\n" + data["client_problem"] + "\n" + data["price"] + "\n" +
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 566, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 1116, in _fire_loader_callables
+    return state._load_expired(state, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state.py", line 798, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\loading.py", line 1582, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Ticket at 0x15b9ff16250> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+[INFO] 18-11-23 - 20:26:08 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 20:26:08 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:26:10 : Bot starts | main.py
+[INFO] 18-11-23 - 20:26:10 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 20:26:10 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:26:14 : Update id=355590341 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:19 : Update id=355590342 is handled. Duration 140 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:23 : Update id=355590343 is handled. Duration 170 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:27 : Update id=355590344 is handled. Duration 109 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:32 : Update id=355590345 is handled. Duration 141 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:37 : Update id=355590346 is handled. Duration 110 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:41 : Update id=355590347 is handled. Duration 155 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:46 : Update id=355590348 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:26:49 : Update id=355590349 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:32:17 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 20:32:17 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:32:19 : Bot starts | main.py
+[INFO] 18-11-23 - 20:32:19 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 20:32:20 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 20:32:27 : Update id=355590350 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:32:33 : Update id=355590351 is handled. Duration 2233 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:32:53 : Update id=355590352 is handled. Duration 1235 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:32:56 : Update id=355590353 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:13 : Update id=355590354 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:28 : Update id=355590355 is handled. Duration 389 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:37 : Update id=355590356 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:42 : Update id=355590357 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:52 : Update id=355590358 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 20:33:57 : Update id=355590359 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:01:21 : Update id=355590360 is handled. Duration 967 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:03:41 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 21:03:41 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:03:43 : Bot starts | main.py
+[INFO] 18-11-23 - 21:03:43 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 21:03:44 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:03:47 : Update id=355590361 is handled. Duration 420 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:11:41 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 21:11:41 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:12:29 : Bot starts | main.py
+[INFO] 18-11-23 - 21:12:29 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 21:12:31 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:12:40 : Update id=355590362 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:12:52 : Update id=355590363 is handled. Duration 140 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:12:56 : Update id=355590364 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:10 : Update id=355590365 is handled. Duration 170 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:20 : Update id=355590366 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:27 : Update id=355590367 is handled. Duration 203 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:33 : Update id=355590368 is handled. Duration 155 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:37 : Update id=355590369 is handled. Duration 140 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:13:44 : Update id=355590370 is handled. Duration 1061 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:41:46 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:41:46 : Polling stopped | dispatcher.py
+[INFO] 18-11-23 - 21:43:19 : Bot starts | main.py
+[INFO] 18-11-23 - 21:43:19 : Start polling | dispatcher.py
+[INFO] 18-11-23 - 21:43:20 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 21:43:32 : Update id=355590371 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:44:27 : Update id=355590372 is handled. Duration 860 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:44:30 : Update id=355590373 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:52:49 : Update id=355590374 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:53:02 : Update id=355590375 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:53:08 : Update id=355590376 is handled. Duration 390 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:53:14 : Update id=355590377 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:53:17 : Update id=355590378 is handled. Duration 405 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 21:53:23 : Update id=355590379 is handled. Duration 1921 ms by bot id=6365986384 | dispatcher.py
+[INFO] 18-11-23 - 22:12:01 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 18-11-23 - 22:12:01 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 14:51:33 : Bot starts | main.py
+[INFO] 19-11-23 - 14:51:33 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 14:51:34 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 14:51:42 : Update id=355590380 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:51:52 : Update id=355590381 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:51:56 : Update id=355590382 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:10 : Update id=355590383 is handled. Duration 155 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:28 : Update id=355590384 is handled. Duration 906 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:36 : Update id=355590385 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:42 : Update id=355590386 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:45 : Update id=355590387 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:52:52 : Update id=355590388 is handled. Duration 1139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:53:26 : Update id=355590389 is handled. Duration 842 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:53:41 : Update id=355590390 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:53:52 : Update id=355590391 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:01 : Update id=355590392 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:15 : Update id=355590393 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:19 : Update id=355590394 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:24 : Update id=355590395 is handled. Duration 342 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:27 : Update id=355590396 is handled. Duration 437 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:54:35 : Update id=355590397 is handled. Duration 1139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 14:58:23 : Update id=355590398 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 14:58:23 : Cause exception while process update id=355590398 by bot id=6365986384
+TypeError: 'method' object is not iterable | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 108, in ticket_list
+    for ticket in tickets:
+TypeError: 'method' object is not iterable
+[INFO] 19-11-23 - 14:59:25 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 14:59:25 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 14:59:40 : Bot starts | main.py
+[INFO] 19-11-23 - 14:59:40 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 14:59:41 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:00:54 : Update id=355590399 is not handled. Duration 63983 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:00:54 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:00:54 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 15:00:58 : Bot starts | main.py
+[INFO] 19-11-23 - 15:00:58 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 15:00:59 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:01:07 : Update id=355590400 is handled. Duration 15 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:01:47 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:01:47 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 15:02:48 : Bot starts | main.py
+[INFO] 19-11-23 - 15:02:48 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 15:02:49 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:02:56 : Update id=355590401 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:28:28 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:28:28 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 15:28:30 : Bot starts | main.py
+[INFO] 19-11-23 - 15:28:30 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 15:28:31 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:28:46 : Update id=355590402 is handled. Duration 858 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:28:50 : Update id=355590403 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:29:22 : Update id=355590404 is handled. Duration 889 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:29:36 : Update id=355590405 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:29:49 : Update id=355590406 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:29:53 : Update id=355590407 is handled. Duration 280 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:30:13 : Update id=355590408 is handled. Duration 906 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:30:18 : Update id=355590409 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:30:24 : Update id=355590410 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:30:33 : Update id=355590411 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:30:38 : Update id=355590412 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:47:46 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:47:46 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 15:47:48 : Bot starts | main.py
+[INFO] 19-11-23 - 15:47:48 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 15:47:49 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:48:07 : Update id=355590413 is handled. Duration 858 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:48:10 : Update id=355590414 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:48:15 : Update id=355590415 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:53:38 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:53:38 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 15:53:40 : Bot starts | main.py
+[INFO] 19-11-23 - 15:53:40 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 15:53:41 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:53:47 : Update id=355590416 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:53:52 : Update id=355590417 is handled. Duration 155 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:53:55 : Update id=355590418 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:00 : Update id=355590419 is handled. Duration 108 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:02 : Update id=355590420 is handled. Duration 202 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:04 : Update id=355590421 is handled. Duration 157 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:07 : Update id=355590422 is handled. Duration 141 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:30 : Update id=355590423 is handled. Duration 780 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 15:54:32 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 15:54:32 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 16:08:28 : Bot starts | main.py
+[INFO] 19-11-23 - 16:08:28 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 16:08:29 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 16:08:39 : Update id=355590424 is handled. Duration 828 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 16:08:42 : Update id=355590425 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 16:08:42 : Cause exception while process update id=355590425 by bot id=6365986384
+TypeError: can only concatenate str (not "int") to str | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 130, in process_select_ticket
+    masters_list += ("#" + ticket.id + "\n" + ticket.problem + "\n" + ticket.price + "\n" + ticket.address +
+TypeError: can only concatenate str (not "int") to str
+[INFO] 19-11-23 - 16:09:36 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 16:09:36 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 16:09:38 : Bot starts | main.py
+[INFO] 19-11-23 - 16:09:38 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 16:09:39 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 16:09:44 : Update id=355590426 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 16:09:46 : Update id=355590427 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:14:39 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:14:39 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:14:41 : Bot starts | main.py
+[INFO] 19-11-23 - 17:14:41 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:14:42 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:15:10 : Update id=355590428 is handled. Duration 891 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:15:25 : Update id=355590429 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:16:12 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:16:12 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:16:14 : Bot starts | main.py
+[INFO] 19-11-23 - 17:16:14 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:16:15 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:16:24 : Update id=355590430 is handled. Duration 281 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:16:28 : Update id=355590431 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:16:39 : Update id=355590432 is handled. Duration 141 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:19:20 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:19:20 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:19:22 : Bot starts | main.py
+[INFO] 19-11-23 - 17:19:22 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:19:23 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:19:36 : Update id=355590433 is handled. Duration 907 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:19:39 : Update id=355590434 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:19:42 : Update id=355590435 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:19:44 : Update id=355590436 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:20:10 : Update id=355590437 is handled. Duration 1000 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:23:38 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:23:38 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:23:40 : Bot starts | main.py
+[INFO] 19-11-23 - 17:23:40 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:23:41 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:23:54 : Update id=355590438 is handled. Duration 860 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:24:00 : Update id=355590439 is handled. Duration 358 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:24:04 : Update id=355590440 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:24:06 : Update id=355590441 is handled. Duration 358 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:24:12 : Update id=355590442 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:24:55 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:24:55 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:24:57 : Bot starts | main.py
+[INFO] 19-11-23 - 17:24:57 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:24:58 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:25:07 : Update id=355590443 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:25:31 : Update id=355590444 is handled. Duration 889 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:25:34 : Update id=355590445 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:25:37 : Update id=355590446 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:25:38 : Update id=355590447 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:25:44 : Update id=355590448 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:26:30 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:26:30 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:26:32 : Bot starts | main.py
+[INFO] 19-11-23 - 17:26:32 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:26:33 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:26:43 : Update id=355590449 is handled. Duration 858 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:26:44 : Update id=355590450 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:26:47 : Update id=355590451 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:26:48 : Update id=355590452 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:26:51 : Update id=355590453 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:29:16 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:29:16 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:53:22 : Bot starts | main.py
+[INFO] 19-11-23 - 17:53:22 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:53:23 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:53:35 : Update id=355590454 is handled. Duration 983 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:53:45 : Update id=355590455 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:54:50 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 17:54:50 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:54:52 : Bot starts | main.py
+[INFO] 19-11-23 - 17:54:52 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 17:54:53 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 17:55:02 : Update id=355590456 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:55:15 : Update id=355590457 is handled. Duration 1016 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:55:22 : Update id=355590458 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:55:26 : Update id=355590459 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:55:28 : Update id=355590460 is handled. Duration 421 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 17:55:41 : Update id=355590461 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 17:55:41 : Cause exception while process update id=355590461 by bot id=6365986384
+ModuleNotFoundError: No module named 'openpyxl' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 231, in process_ticket_description
+    df.to_excel('./otchetnost.xlsx')
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\core\generic.py", line 2345, in to_excel
+    formatter.write(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\formats\excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+[INFO] 19-11-23 - 18:00:43 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:00:43 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:00:45 : Bot starts | main.py
+[INFO] 19-11-23 - 18:00:45 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:00:47 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:00:59 : Update id=355590462 is handled. Duration 937 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:01:02 : Update id=355590463 is handled. Duration 342 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:01:07 : Update id=355590464 is handled. Duration 953 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:01:09 : Update id=355590465 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:01:15 : Update id=355590466 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:02:12 : Update id=355590467 is handled. Duration 1000 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:02:15 : Update id=355590468 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:02:21 : Update id=355590469 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:02:24 : Update id=355590470 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:02:31 : Update id=355590471 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 18:02:31 : Cause exception while process update id=355590471 by bot id=6365986384
+PermissionError: [Errno 13] Permission denied: './otchetnost.xlsx' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 231, in process_ticket_description
+    df.to_excel('./otchetnost.xlsx')
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\core\generic.py", line 2345, in to_excel
+    formatter.write(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\formats\excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\excel\_xlsxwriter.py", line 205, in __init__
+    super().__init__(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\excel\_base.py", line 1263, in __init__
+    self._handles = get_handle(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\common.py", line 872, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: './otchetnost.xlsx'
+[INFO] 19-11-23 - 18:02:53 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:02:53 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:02:55 : Bot starts | main.py
+[INFO] 19-11-23 - 18:02:55 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:02:56 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:03:06 : Update id=355590472 is handled. Duration 1000 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:03:08 : Update id=355590473 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:03:11 : Update id=355590474 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:03:12 : Update id=355590475 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:03:15 : Update id=355590476 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:21:08 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:21:08 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:21:10 : Bot starts | main.py
+[INFO] 19-11-23 - 18:21:10 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:21:11 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:21:30 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:21:30 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:21:32 : Bot starts | main.py
+[INFO] 19-11-23 - 18:21:32 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:21:33 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:21:42 : Update id=355590477 is handled. Duration 514 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:21:45 : Update id=355590478 is handled. Duration 172 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:21:48 : Update id=355590479 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:21:51 : Update id=355590480 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:21:57 : Update id=355590481 is not handled. Duration 218 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 18:21:57 : Cause exception while process update id=355590481 by bot id=6365986384
+ValueError: Sheet 'Sheet1' already exists and if_sheet_exists is set to 'error'. | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 234, in process_ticket_description
+    df.to_excel(writer, index=False)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\core\generic.py", line 2345, in to_excel
+    formatter.write(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\formats\excel.py", line 955, in write
+    writer._write_cells(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 463, in _write_cells
+    raise ValueError(
+ValueError: Sheet 'Sheet1' already exists and if_sheet_exists is set to 'error'.
+[INFO] 19-11-23 - 18:22:25 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:22:25 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:22:27 : Bot starts | main.py
+[INFO] 19-11-23 - 18:22:27 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:22:28 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:22:36 : Update id=355590482 is handled. Duration 468 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:22:38 : Update id=355590483 is handled. Duration 156 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:22:40 : Update id=355590484 is handled. Duration 156 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:22:43 : Update id=355590485 is handled. Duration 171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:22:47 : Update id=355590486 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:23:24 : Update id=355590487 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:23:26 : Update id=355590488 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:23:28 : Update id=355590489 is handled. Duration 281 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:23:31 : Update id=355590490 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:23:42 : Update id=355590491 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:25:47 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:25:47 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:25:49 : Bot starts | main.py
+[INFO] 19-11-23 - 18:25:49 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:25:50 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:25:59 : Update id=355590492 is handled. Duration 1812 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:09 : Update id=355590493 is handled. Duration 4952 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:15 : Update id=355590494 is handled. Duration 203 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:18 : Update id=355590495 is handled. Duration 735 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:24 : Update id=355590496 is not handled. Duration 202 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 18:26:24 : Cause exception while process update id=355590496 by bot id=6365986384
+ValueError: Sheet 'Sheet1' already exists and if_sheet_exists is set to 'error'. | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 234, in process_ticket_description
+    df.to_excel(writer, index=False, sheet_name="Sheet1")
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\core\generic.py", line 2345, in to_excel
+    formatter.write(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\formats\excel.py", line 955, in write
+    writer._write_cells(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pandas\io\excel\_openpyxl.py", line 463, in _write_cells
+    raise ValueError(
+ValueError: Sheet 'Sheet1' already exists and if_sheet_exists is set to 'error'.
+[INFO] 19-11-23 - 18:26:34 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:26:34 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:26:36 : Bot starts | main.py
+[INFO] 19-11-23 - 18:26:36 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:26:37 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:26:42 : Update id=355590497 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:44 : Update id=355590498 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:48 : Update id=355590499 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:50 : Update id=355590500 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:26:54 : Update id=355590501 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:27:12 : Update id=355590502 is handled. Duration 859 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:27:15 : Update id=355590503 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:27:19 : Update id=355590504 is handled. Duration 405 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:27:22 : Update id=355590505 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:27:26 : Update id=355590506 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:57:11 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:57:11 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:57:13 : Bot starts | main.py
+[INFO] 19-11-23 - 18:57:13 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:57:14 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:57:28 : Update id=355590507 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:57:30 : Update id=355590508 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:57:34 : Update id=355590509 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:57:38 : Update id=355590510 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:57:43 : Update id=355590511 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 18:57:43 : Cause exception while process update id=355590511 by bot id=6365986384
+KeyError: 'Worksheet data does not exist.' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 228, in process_ticket_description
+    ws = wb['data']
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet data does not exist.'
+[INFO] 19-11-23 - 18:59:12 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:59:12 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 18:59:15 : Bot starts | main.py
+[INFO] 19-11-23 - 18:59:15 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 18:59:15 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 18:59:21 : Update id=355590512 is handled. Duration 358 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:59:24 : Update id=355590513 is handled. Duration 187 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:59:27 : Update id=355590514 is handled. Duration 172 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:59:30 : Update id=355590515 is handled. Duration 218 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 18:59:34 : Update id=355590516 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 18:59:34 : Cause exception while process update id=355590516 by bot id=6365986384
+AttributeError: 'Worksheet' object has no attribute 'save' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 231, in process_ticket_description
+    ws.save(xlsx_path)
+AttributeError: 'Worksheet' object has no attribute 'save'
+[INFO] 19-11-23 - 19:00:08 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:00:08 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:00:11 : Bot starts | main.py
+[INFO] 19-11-23 - 19:00:11 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:00:12 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:00:15 : Update id=355590517 is handled. Duration 547 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:17 : Update id=355590518 is handled. Duration 218 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:19 : Update id=355590519 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:24 : Update id=355590520 is handled. Duration 171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:31 : Update id=355590521 is handled. Duration 156 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:50 : Update id=355590522 is handled. Duration 952 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:52 : Update id=355590523 is handled. Duration 422 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:55 : Update id=355590524 is handled. Duration 422 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:00:57 : Update id=355590525 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:01:02 : Update id=355590526 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 19:01:02 : Cause exception while process update id=355590526 by bot id=6365986384
+PermissionError: [Errno 13] Permission denied: './otchetnost.xlsx' | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 231, in process_ticket_description
+    wb.save(xlsx_path)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1248, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: './otchetnost.xlsx'
+[INFO] 19-11-23 - 19:02:59 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:02:59 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:03:01 : Bot starts | main.py
+[INFO] 19-11-23 - 19:03:01 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:03:02 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:03:06 : Update id=355590527 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:03:08 : Update id=355590528 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:03:12 : Update id=355590529 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:03:15 : Update id=355590530 is handled. Duration 109 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:03:21 : Update id=355590531 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:08:07 : Update id=355590532 is handled. Duration 921 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:08:09 : Update id=355590533 is handled. Duration 389 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:08:15 : Update id=355590534 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:08:17 : Update id=355590535 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:08:21 : Update id=355590536 is handled. Duration 342 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:15:46 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:15:46 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:15:48 : Bot starts | main.py
+[INFO] 19-11-23 - 19:15:48 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:15:49 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:16:36 : Update id=355590537 is handled. Duration 906 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:16:45 : Update id=355590538 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:16:48 : Update id=355590539 is handled. Duration 468 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:16:51 : Update id=355590540 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:16:57 : Update id=355590541 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:17:01 : Update id=355590542 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:17:04 : Update id=355590543 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:17:06 : Update id=355590544 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:17:08 : Update id=355590545 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:17:12 : Update id=355590546 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:18:51 : Update id=355590547 is handled. Duration 891 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:18:54 : Update id=355590548 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:33:13 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:33:13 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:33:16 : Bot starts | main.py
+[INFO] 19-11-23 - 19:33:16 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:33:16 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:33:24 : Update id=355590549 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:33:40 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:33:40 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:33:42 : Bot starts | main.py
+[INFO] 19-11-23 - 19:33:42 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:33:43 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:33:49 : Update id=355590550 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:33:56 : Update id=355590551 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:00 : Update id=355590552 is handled. Duration 171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:09 : Update id=355590553 is handled. Duration 172 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:10 : Update id=355590554 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:15 : Update id=355590555 is handled. Duration 218 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:21 : Update id=355590556 is handled. Duration 172 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:26 : Update id=355590557 is handled. Duration 109 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:30 : Update id=355590558 is handled. Duration 157 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:34:31 : Update id=355590559 is handled. Duration 140 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 19:42:05 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:42:05 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 19:42:07 : Bot starts | main.py
+[INFO] 19-11-23 - 19:42:07 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 19:42:08 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 19:42:13 : Update id=355590560 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:01:41 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:01:41 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:01:44 : Bot starts | main.py
+[INFO] 19-11-23 - 20:01:44 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:01:45 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:02:50 : Update id=355590561 is handled. Duration 1235 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:02:59 : Update id=355590562 is handled. Duration 516 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:03:27 : Update id=355590563 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:03:37 : Update id=355590564 is handled. Duration 437 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:08:58 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:08:58 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:09:00 : Bot starts | main.py
+[INFO] 19-11-23 - 20:09:00 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:09:01 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:09:08 : Update id=355590565 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:09:14 : Update id=355590566 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:10:41 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:10:41 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:10:44 : Bot starts | main.py
+[INFO] 19-11-23 - 20:10:44 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:10:44 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:11:12 : Update id=355590567 is handled. Duration 889 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:11:16 : Update id=355590568 is handled. Duration 389 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:11:21 : Update id=355590569 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:11:33 : Update id=355590570 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:11:42 : Update id=355590571 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:11:57 : Update id=355590572 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:12:05 : Update id=355590573 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:12:15 : Update id=355590574 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:12:50 : Update id=355590575 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:12:54 : Update id=355590576 is handled. Duration 390 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:02 : Update id=355590577 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:07 : Update id=355590578 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:14 : Update id=355590579 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:22 : Update id=355590580 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:26 : Update id=355590581 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:31 : Update id=355590582 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:35 : Update id=355590583 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:13:37 : Update id=355590584 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 19-11-23 - 20:13:37 : Cause exception while process update id=355590584 by bot id=6365986384
+IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: Ticket.is_done
+[SQL: INSERT INTO "Ticket" (problem, price, address, phone, client_name, time, description, in_process, master_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Протекает унитаз', 'От 590', 'Ленина 6', '+79834565547', 'Ваня', '20:00', '..', 0, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: Ticket.is_done
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\operator_interface.py", line 126, in cancel_handler
+    db.commit()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: Ticket.is_done
+[SQL: INSERT INTO "Ticket" (problem, price, address, phone, client_name, time, description, in_process, master_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Протекает унитаз', 'От 590', 'Ленина 6', '+79834565547', 'Ваня', '20:00', '..', 0, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[INFO] 19-11-23 - 20:14:05 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:14:05 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:14:15 : Bot starts | main.py
+[INFO] 19-11-23 - 20:14:15 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:14:20 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:14:23 : Update id=355590585 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:14:36 : Update id=355590586 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:14:42 : Update id=355590587 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:14:54 : Update id=355590588 is handled. Duration 110 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:00 : Update id=355590589 is handled. Duration 265 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:10 : Update id=355590590 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:20 : Update id=355590591 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:24 : Update id=355590592 is handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:30 : Update id=355590593 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:43 : Update id=355590594 is handled. Duration 421 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:49 : Update id=355590595 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:15:54 : Update id=355590596 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:12 : Update id=355590597 is handled. Duration 937 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:21 : Update id=355590598 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:25 : Update id=355590599 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:31 : Update id=355590600 is handled. Duration 407 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:50 : Update id=355590601 is handled. Duration 937 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:16:55 : Update id=355590602 is handled. Duration 1157 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:18:49 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:18:49 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:18:51 : Bot starts | main.py
+[INFO] 19-11-23 - 20:18:51 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:18:52 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:19:04 : Update id=355590603 is handled. Duration 860 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:19:15 : Update id=355590604 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:19:20 : Update id=355590605 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:19:38 : Update id=355590606 is handled. Duration 843 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:19:51 : Update id=355590607 is handled. Duration 407 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:19:59 : Update id=355590608 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:20:05 : Update id=355590609 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:20:14 : Update id=355590610 is handled. Duration 406 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:20:35 : Update id=355590611 is handled. Duration 2156 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:21:20 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:21:20 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:21:22 : Bot starts | main.py
+[INFO] 19-11-23 - 20:21:22 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:21:25 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:21:28 : Update id=355590612 is handled. Duration 468 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:21:42 : Update id=355590613 is handled. Duration 218 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:21:47 : Update id=355590614 is handled. Duration 171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:02 : Update id=355590615 is handled. Duration 139 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:09 : Update id=355590616 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:13 : Update id=355590617 is handled. Duration 110 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:18 : Update id=355590618 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:22 : Update id=355590619 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:29 : Update id=355590620 is handled. Duration 3078 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:31 : Update id=355590621 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:47 : Update id=355590622 is handled. Duration 953 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:22:52 : Update id=355590623 is handled. Duration 360 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:24:27 : Update id=355590624 is handled. Duration 907 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:24:43 : Update id=355590625 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:24:47 : Update id=355590626 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:24:54 : Update id=355590627 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:24:58 : Update id=355590628 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:25:02 : Update id=355590629 is handled. Duration 1562 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:25:41 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:25:41 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:25:44 : Bot starts | main.py
+[INFO] 19-11-23 - 20:25:44 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:25:44 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:26:00 : Update id=355590630 is handled. Duration 812 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:26:15 : Update id=355590631 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:26:21 : Update id=355590632 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:26:37 : Update id=355590633 is handled. Duration 875 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:26:40 : Update id=355590634 is handled. Duration 500 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:26:51 : Update id=355590635 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:23 : Update id=355590636 is handled. Duration 890 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:30 : Update id=355590637 is handled. Duration 359 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:37 : Update id=355590638 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:42 : Update id=355590639 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:51 : Update id=355590640 is handled. Duration 342 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:27:55 : Update id=355590641 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:04 : Update id=355590642 is handled. Duration 968 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:08 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:29:08 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:29:10 : Bot starts | main.py
+[INFO] 19-11-23 - 20:29:10 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:29:11 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:29:19 : Update id=355590643 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:23 : Update id=355590644 is handled. Duration 156 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:35 : Update id=355590645 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:42 : Update id=355590646 is handled. Duration 186 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:50 : Update id=355590647 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:29:56 : Update id=355590648 is handled. Duration 171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:30:10 : Update id=355590649 is handled. Duration 282 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:30:52 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:30:52 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:30:54 : Bot starts | main.py
+[INFO] 19-11-23 - 20:30:54 : Start polling | dispatcher.py
+[INFO] 19-11-23 - 20:30:55 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 19-11-23 - 20:31:01 : Update id=355590650 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:31:14 : Update id=355590651 is handled. Duration 250 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:32:24 : Update id=355590652 is handled. Duration 907 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:32:30 : Update id=355590653 is handled. Duration 342 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:32:41 : Update id=355590654 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:32:47 : Update id=355590655 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:32:53 : Update id=355590656 is handled. Duration 436 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:04 : Update id=355590657 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:13 : Update id=355590658 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:18 : Update id=355590659 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:21 : Update id=355590660 is handled. Duration 406 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:48 : Update id=355590661 is handled. Duration 1889 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:54 : Update id=355590662 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:33:58 : Update id=355590663 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:11 : Update id=355590664 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:18 : Update id=355590665 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:35 : Update id=355590666 is handled. Duration 889 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:39 : Update id=355590667 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:43 : Update id=355590668 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:51 : Update id=355590669 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:34:54 : Update id=355590670 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:35:01 : Update id=355590671 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 19-11-23 - 20:35:46 : Polling stopped | dispatcher.py
+[INFO] 19-11-23 - 20:35:46 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:09:15 : Bot starts | main.py
+[INFO] 20-11-23 - 16:09:15 : Start polling | dispatcher.py
+[INFO] 20-11-23 - 16:09:16 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:09:48 : Update id=355590672 is handled. Duration 1452 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:16 : Update id=355590673 is handled. Duration 1546 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:18 : Update id=355590674 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:24 : Update id=355590675 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:26 : Update id=355590676 is handled. Duration 313 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:29 : Update id=355590677 is handled. Duration 375 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:38 : Update id=355590678 is handled. Duration 436 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:10:54 : Update id=355590679 is handled. Duration 812 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:01 : Update id=355590680 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:04 : Update id=355590681 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:12 : Update id=355590682 is handled. Duration 311 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:16 : Update id=355590683 is handled. Duration 281 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:23 : Update id=355590684 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:34 : Update id=355590685 is handled. Duration 421 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:38 : Update id=355590686 is handled. Duration 281 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:43 : Update id=355590687 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:49 : Update id=355590688 is handled. Duration 344 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:11:56 : Update id=355590689 is handled. Duration 1093 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:12:09 : Update id=355590690 is handled. Duration 343 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:12:34 : Update id=355590691 is handled. Duration 796 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:12:37 : Update id=355590692 is handled. Duration 406 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:12:39 : Update id=355590693 is not handled. Duration 16 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 20-11-23 - 16:12:39 : Cause exception while process update id=355590693 by bot id=6365986384
+ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value=6932519708, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type | dispatcher.py
+Traceback (most recent call last):
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 199, in process_select_master
+    await send_to_master(master.tg_id, ticket_text)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\admin_interface.py", line 37, in send_to_master
+    await bot.send_message(master_id, text=text)
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2696, in send_message
+    call = SendMessage(
+  File "F:\progesNOprogress\pythonProjects\yamansaren_tg_bot\venv\lib\site-packages\pydantic\main.py", line 165, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value=6932519708, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.3/v/string_type
+[INFO] 20-11-23 - 16:14:05 : Polling stopped | dispatcher.py
+[INFO] 20-11-23 - 16:14:05 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:14:07 : Bot starts | main.py
+[INFO] 20-11-23 - 16:14:07 : Start polling | dispatcher.py
+[INFO] 20-11-23 - 16:14:08 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:14:17 : Update id=355590694 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:14:30 : Update id=355590695 is handled. Duration 125 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:14:33 : Update id=355590696 is handled. Duration 203 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:28:52 : Update id=355590697 is not handled. Duration 0 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:29:04 : Polling stopped | dispatcher.py
+[INFO] 20-11-23 - 16:29:04 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:29:07 : Bot starts | main.py
+[INFO] 20-11-23 - 16:29:07 : Start polling | dispatcher.py
+[INFO] 20-11-23 - 16:29:08 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:29:11 : Update id=355590698 is handled. Duration 312 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:29:19 : Update id=355590699 is handled. Duration 141 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:29:39 : Update id=355590700 is handled. Duration 812 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:29:43 : Update id=355590701 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:29:51 : Update id=355590702 is handled. Duration 297 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:00 : Update id=355590703 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:03 : Update id=355590704 is handled. Duration 391 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:11 : Update id=355590705 is handled. Duration 327 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:15 : Update id=355590706 is handled. Duration 328 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:20 : Update id=355590707 is handled. Duration 1171 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:26 : Update id=355590708 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:29 : Update id=355590709 is handled. Duration 296 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:30:34 : Update id=355590710 is handled. Duration 610 ms by bot id=6365986384 | dispatcher.py
+[INFO] 20-11-23 - 16:36:16 : Polling stopped | dispatcher.py
+[INFO] 20-11-23 - 16:36:16 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:37:49 : Bot starts | main.py
+[INFO] 20-11-23 - 16:37:49 : Start polling | dispatcher.py
+[INFO] 20-11-23 - 16:37:50 : Run polling for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
+[INFO] 20-11-23 - 16:38:12 : Update id=355590711 is handled. Duration 1188 ms by bot id=6365986384 | dispatcher.py
+[ERROR] 20-11-23 - 17:22:19 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 20-11-23 - 17:22:19 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 20-11-23 - 17:22:31 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[ERROR] 20-11-23 - 19:22:16 : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 64] Указанное сетевое имя более недоступно | dispatcher.py
+[WARNING] 20-11-23 - 19:22:16 : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6365986384) | dispatcher.py
+[INFO] 20-11-23 - 19:22:28 : Connection established (tryings = 1, bot id = 6365986384) | dispatcher.py
+[INFO] 20-11-23 - 20:01:45 : Polling stopped | dispatcher.py
+[INFO] 20-11-23 - 20:01:45 : Polling stopped for bot @yamansaren_ticket_bot id=6365986384 - 'yamansaren' | dispatcher.py
